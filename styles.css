@@ -1,0 +1,62 @@
+/* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 20px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid #333;
+  transition: border-color 0.3s, background-color 0.3s;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+p:hover {
+  border-color: #ff4500; /* Orange color */
+  background-color: #ff4500;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 400px; /* Increase the width as desired */
+  margin: 0 auto; /* Center align the list */
+}
+
+li {
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Customize the appearance of the list items */
+li::before {
+  content: "➤ ";
+  color: #ff4500; /* Orange color */
+}
+
+/* Add some spacing between the list items */
+li + li {
+  margin-top: 10px;
+}
+
+/* Add hover effect */
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
